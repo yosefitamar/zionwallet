@@ -55,7 +55,7 @@ class Render
      */
     private static function resolveTemplatePath(array $data): string
     {
-        $template = $data['template'] ?? DEFAULT_TEMPLATE;
+        $template = $data['template'] ?? config('defaultTemplate');
         $templatePath = dirname(__DIR__) . "/resources/views/{$template}.php";
 
         if (!file_exists($templatePath)) {

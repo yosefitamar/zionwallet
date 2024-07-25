@@ -2,6 +2,7 @@
 
 namespace Controllers;
 
+use Classes\Database;
 use Classes\Render;
 use Exception;
 
